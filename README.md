@@ -23,6 +23,7 @@ A VS Code extension that helps you enhance AI prompts by easily extracting codeb
 #### Supported Languages:
 - TypeScript (.ts / .tsx)
 - JavaScript (.js / .jsx)
+- Python (.py)
 
 ### Perfect for:
 - Creating documentation
@@ -80,7 +81,7 @@ Or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items
 ### Manual Installation
 Download the `.vsix` file and install via:
 ```bash
-code --install-extension vsc-codebase-context-1.0.0.vsix
+code --install-extension vsc-codebase-context-1.X.X.vsix
 ```
 
 ## Usage
@@ -108,7 +109,15 @@ npm run package
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Whether it's adding support for new languages, fixing bugs, or improving documentation.
+
+Please check our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+- Project structure
+- How to add new language support
+- Development setup
+- Pull request process
+
+Feel free to submit a Pull Request or open an issue for discussion.
 
 ## License
 

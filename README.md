@@ -1,7 +1,8 @@
 # Folder Structure Copy - VS Code Extension
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/thomas-barkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomas-barkats.vsc-folder-structure-copy)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/thomas-barkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomas-barkats.vsc-folder-structure-copy)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/thomasbarkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/thomasbarkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/thomasbarkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A simple VS Code extension that adds a "Copy Structure Prompt" option when right-clicking on folders. This copies the folder structure to your clipboard in a tree-like format. Perfect for documentation, LLM prompts, or sharing project structures.
@@ -45,6 +46,8 @@ my-project/
 2. Go to Extensions (Ctrl+Shift+X)
 3. Search for "Folder Structure Copy"
 4. Click Install
+
+Or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy).
 
 ### Manual Installation
 Download the `.vsix` file and install via:

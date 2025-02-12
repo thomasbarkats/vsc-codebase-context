@@ -34,14 +34,12 @@
     "url": "https://github.com/thomasbarkats/vsc-codebase-context/issues"
   },
   "homepage": "https://github.com/thomasbarkats/vsc-codebase-context/blob/main/README.md",
-  "activationEvents": [
-    "onStartupFinished"
-  ],
   "main": "./out/extension.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/vsc-codebase-context"
   },
+  "activationEvents": [],
   "contributes": {
     "commands": [
       {
@@ -61,7 +59,7 @@
           "group": "navigation"
         },
         {
-          "when": "resourceExtname == .ts || resourceExtname == .js || resourceExtname == .jsx || resourceExtname == .tsx",
+          "when": "resourceExtname =~ /\\.(ts|js|jsx|tsx|py)$/",
           "command": "folder-structure.copyInterface",
           "group": "navigation"
         }

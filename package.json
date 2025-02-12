@@ -2,7 +2,7 @@
   "name": "vsc-codebase-context",
   "displayName": "Codebase Context Clipper",
   "description": "Easily clip folder structures as trees and code interfaces to enhance your AI prompts with accurate codebase context.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "thomasbarkats",
   "author": {
     "name": "Thomas BARKATS"

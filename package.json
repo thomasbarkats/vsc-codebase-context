@@ -2,7 +2,7 @@
   "name": "vsc-folder-structure-copy",
   "displayName": "Folder Structure Copy",
   "description": "Easily copy folder structures to clipboard with a tree-like format. Useful for LLM prompts.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "thomasbarkats",
   "author": {
     "name": "Thomas BARKATS"

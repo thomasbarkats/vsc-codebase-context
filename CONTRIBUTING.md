@@ -73,7 +73,7 @@ ExtractorFactory.register(
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vscode-file-interface-extractor.git
+git clone https://github.com/thomasbarkats/vsc-codebase-context.git
 ```
 
 2. Install dependencies:

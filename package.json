@@ -1,7 +1,7 @@
 {
-  "name": "vsc-folder-structure-copy",
-  "displayName": "Folder Structure Copy",
-  "description": "Easily copy folder structures to clipboard with a tree-like format. Useful for LLM prompts.",
+  "name": "vsc-codebase-context",
+  "displayName": "Codebase Context Clipper",
+  "description": "Easily clip folder structures as trees and code interfaces to enhance your AI prompts with accurate codebase context.",
   "version": "1.1.0",
   "publisher": "thomasbarkats",
   "author": {
@@ -31,22 +31,26 @@
   },
   "icon": "images/icon.png",
   "bugs": {
-    "url": "https://github.com/thomasbarkats/vsc-folder-structure-copy/issues"
+    "url": "https://github.com/thomasbarkats/vsc-codebase-context/issues"
   },
-  "homepage": "https://github.com/thomasbarkats/vsc-folder-structure-copy/blob/main/README.md",
+  "homepage": "https://github.com/thomasbarkats/vsc-codebase-context/blob/main/README.md",
   "activationEvents": [
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/vsc-folder-structure-copy"
+    "url": "https://github.com/yourusername/vsc-codebase-context"
   },
   "contributes": {
     "commands": [
       {
         "command": "folder-structure.copyStructure",
-        "title": "📋 Copy Structure Prompt"
+        "title": "📋 Copy Structure"
+      },
+      {
+        "command": "folder-structure.copyInterface",
+        "title": "📋 Copy File Interface"
       }
     ],
     "menus": {
@@ -55,6 +59,11 @@
           "when": "explorerResourceIsFolder",
           "command": "folder-structure.copyStructure",
           "group": "navigation"
+        },
+        {
+          "when": "resourceExtname == .ts || resourceExtname == .js || resourceExtname == .jsx || resourceExtname == .tsx",
+          "command": "folder-structure.copyInterface",
+          "group": "navigation"
         }
       ]
     }
@@ -62,15 +71,17 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "vscode:publish": "vsce publish",
-    "vscode:test": "npm run package && code --install-extension vsc-folder-structure-copy-1.0.0.vsix",
+    "vscode:test": "npm run package && code --install-extension $(ls -t vsc-codebase-context-*.vsix | head -n 1)",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "package": "vsce package"
   },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
   "devDependencies": {
     "@types/node": "^14.18.63",
     "@types/vscode": "^1.97.0",
-    "typescript": "^4.9.5",
     "vsce": "^2.15.0"
   }
 }

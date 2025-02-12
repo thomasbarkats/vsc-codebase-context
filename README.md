@@ -1,27 +1,37 @@
-# Folder Structure Copy - VS Code Extension
+# Codebase Context Clipper - VS Code Extension
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/thomasbarkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/thomasbarkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/thomasbarkats.vsc-folder-structure-copy)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/thomasbarkats.vsc-codebase-context)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/thomasbarkats.vsc-codebase-context)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/thomasbarkats.vsc-codebase-context)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A simple VS Code extension that adds a "Copy Structure Prompt" option when right-clicking on folders. This copies the folder structure to your clipboard in a tree-like format. Perfect for documentation, LLM prompts, or sharing project structures.
+A VS Code extension that helps you enhance AI prompts by easily extracting codebase context. Clip folder structures as tree-like formats and extract code interfaces to provide accurate context for your LLM conversations. Perfect for documentation, AI-assisted development, and sharing project insights.
 
 ## Features
 
-✨ One-click folder structure copying
+### ✨ Folder Structure Copy
 - Right-click any folder in VS Code's explorer
-- Select "📋 Copy Structure Prompt"
+- Select "📋 Copy Structure"
 - Get a nicely formatted tree structure of all files and folders
 - Automatically skips `node_modules` and `.git` directories
+
+### ✨ File Interface Copy
+- Right-click any supported file in VS Code's explorer
+- Select "📋 Copy File Interface"
+- Get the file's interface (function signatures, types, JSDoc comments)
+
+#### Supported Languages:
+- TypeScript (.ts / .tsx)
+- JavaScript (.js / .jsx)
 
 ### Perfect for:
 - Creating documentation
 - Sharing project structures
-- LLM prompts requiring folder context
+- LLM prompts requiring code context
 
-## Example
+## Examples
 
+### Folder Structure
 Right-click on any folder and get a clean tree structure:
 
 ```
@@ -39,6 +49,24 @@ my-project/
 └── tsconfig.json
 ```
 
+### File Interface
+Right-click on a TypeScript file and get its interface:
+
+```typescript
+/**
+ * Processes user data and returns formatted result
+ * @param data - Raw user input data
+ * @returns Processed and validated user data
+ */
+function processUserData(data: UserInput): ProcessedData
+
+interface UserInput {
+    name: string;
+    age: number;
+    preferences?: string[];
+}
+```
+
 ## Installation
 
 ### VS Code Marketplace
@@ -47,18 +75,18 @@ my-project/
 3. Search for "Folder Structure Copy"
 4. Click Install
 
-Or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-folder-structure-copy).
+Or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context).
 
 ### Manual Installation
 Download the `.vsix` file and install via:
 ```bash
-code --install-extension vsc-folder-structure-copy-1.0.0.vsix
+code --install-extension vsc-codebase-context-1.0.0.vsix
 ```
 
 ## Usage
 
 1. In VS Code's file explorer, right-click any folder
-2. Select `📋 Copy Structure Prompt` from the context menu
+2. Select "📋 Copy Structure" from the context menu
 3. The folder structure is now in your clipboard, ready to paste
 
 ## Development
@@ -67,8 +95,8 @@ To build the extension from source:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/thomasbarkats/vsc-folder-structure-copy.git
-cd vsc-folder-structure-copy
+git clone https://github.com/thomasbarkats/vsc-codebase-context.git
+cd vsc-codebase-context
 ```
 
 2. Install dependencies and build

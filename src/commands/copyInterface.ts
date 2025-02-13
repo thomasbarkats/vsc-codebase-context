@@ -26,8 +26,12 @@ export function registerCopyInterfaceCommand(context: vscode.ExtensionContext) {
       };
 
       const interfaces = extractor.extractInterface(fileContent, options);
-      await vscode.env.clipboard.writeText(interfaces);
-      vscode.window.showInformationMessage('File interface copied to clipboard!');
+      if (interfaces) {
+        await vscode.env.clipboard.writeText(interfaces);
+        vscode.window.showInformationMessage('File interface copied to clipboard!');
+      } else {
+        vscode.window.showWarningMessage('No extractable interface for this file (check for classes)');
+      }
 
     } catch (error) {
       vscode.window.showErrorMessage('Error extracting interface: ' + (error as Error).message);

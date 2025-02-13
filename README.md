@@ -21,9 +21,9 @@ A VS Code extension that helps you enhance AI prompts by easily extracting codeb
 - Get the file's interface (function signatures, types, JSDoc comments)
 
 #### Supported Languages:
-- TypeScript (.ts / .tsx)
-- JavaScript (.js / .jsx)
-- Python (.py)
+- TypeScript (.ts)
+- JavaScript (.js)
+- Python (.py) => TS interface
 
 ### Perfect for:
 - Creating documentation

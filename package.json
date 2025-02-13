@@ -59,7 +59,7 @@
           "group": "navigation"
         },
         {
-          "when": "resourceExtname =~ /\\.(ts|js|jsx|tsx|py)$/",
+          "when": "resourceExtname =~ /\\.(ts|js|py)$/",
           "command": "folder-structure.copyInterface",
           "group": "navigation"
         }

@@ -1,8 +1,9 @@
-# Codebase Context Clipper - VS Code Extension
+# Codebase Context Clipper 📋
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/thomasbarkats.vsc-codebase-context)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/thomasbarkats.vsc-codebase-context)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/thomasbarkats.vsc-codebase-context)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
+[![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-007ACC?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/thomasbarkats.vsc-codebase-context?label=Version)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/thomasbarkats.vsc-codebase-context?label=Downloads)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/thomasbarkats.vsc-codebase-context?label=Rating)](https://marketplace.visualstudio.com/items?itemName=thomasbarkats.vsc-codebase-context)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A VS Code extension that helps you enhance AI prompts by easily extracting codebase context. Clip folder structures as tree-like formats and extract code interfaces to provide accurate context for your LLM conversations. Perfect for documentation, AI-assisted development, and sharing project insights.
